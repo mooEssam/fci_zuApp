@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Departmentfrag">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:id="@+id/iscard"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/splaback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/departimage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/is" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/departimage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/departmanger"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="#F6F2F6"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="DR/mohamed mounir"
+                    android:layout_marginTop="25dp"
+                    />
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/departname"
+                    android:layout_below="@id/departmanger"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-12dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="IS"
+                    android:textSize="35dp"
+                    android:background="@drawable/depart_text"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/departname"
+                    android:layout_margin="8dp"
+                    android:textColor="#F9F8FB"
+                    android:text="IS are formal, sociol technical, organizational systems designed to collect, process, store,and distribute information. In a sociol technical perspective, are composed by four components: task,people, structure (or roles), and technology , software used to run a computerized database"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:id="@+id/itcard"
+                android:layout_below="@+id/iscard"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/splaback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/itimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/it" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@+id/itimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ittmanger"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:textColor="#F6F2F6"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="DR/Ehab Roshdy"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/itname"
+                            android:layout_below="@id/ittmanger"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-12dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="IT"
+                            android:textSize="35dp"
+                            android:background="@drawable/depart_text"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/itname"
+                            android:layout_margin="8dp"
+                            android:textColor="#F9F8FB"
+                            android:text="IT refers to the development,maintenance, and use of computer software,systems,and networks.It includes their use for the processing and distribution of data. Data means information,facts,statistics,gathered together for reference,storage,or analysis."
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:id="@+id/cscard"
+                android:layout_below="@+id/itcard"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/splaback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/csimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/cs" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@+id/csimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/csmanger"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:textColor="#F6F2F6"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="DR/M.abd elbaset"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/csname"
+                            android:layout_below="@id/csmanger"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-12dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="CS"
+                            android:textSize="35dp"
+                            android:background="@drawable/depart_text"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/csname"
+                            android:layout_margin="8dp"
+                            android:textColor="#F9F8FB"
+                            android:text="Cs is a field that Combine between hardware and software design of computer systems which are relevant to the many applications of computing technology that arise in the market place. are involved in areas such as the design, installation, maintenance and development of computer-based systems on a broad scale."
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:id="@+id/dscard"
+                android:layout_below="@+id/cscard"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/splaback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/dsimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/ds" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@+id/dsimage"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dsmanger"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:textColor="#F6F2F6"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:text="DR/M.abd elbaset"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dsname"
+                            android:layout_below="@id/dsmanger"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-12dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="DS"
+                            android:textSize="35dp"
+                            android:background="@drawable/depart_text"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dsname"
+                            android:layout_margin="8dp"
+                            android:textColor="#F9F8FB"
+                            android:text="A decision support system (DSS) is a computerized program used to support determinations, judgments, and courses of action in an organization or a business. A DSS sifts through and analyzes massive amounts of data, compiling comprehensive information that can be used to solve problems and in decision-making."
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

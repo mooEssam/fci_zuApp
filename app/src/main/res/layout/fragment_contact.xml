@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+       <RelativeLayout
+           android:layout_marginLeft="12dp"
+           android:id="@+id/first"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/image_back"
+        android:layout_marginTop="24dp"
+        android:id="@+id/locimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_location_on_24"
+        />
+
+    <TextView
+        android:id="@+id/adressword"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/locimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Address"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#838187"
+        android:layout_toRightOf="@id/locimage"
+        android:layout_below="@id/adressword"
+        android:text="Faculty Of Computer And Information
+Zagazig University"
+        />
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/image_back"
+        android:layout_marginTop="20dp"
+        android:id="@+id/phoneimage"
+        android:layout_below="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_local_phone_24"
+        />
+
+    <TextView
+        android:id="@+id/phoneword"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/phoneimage"
+        android:layout_below="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Phone"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#838187"
+        android:layout_toRightOf="@id/phoneimage"
+        android:layout_below="@id/phoneword"
+        android:text="Mobile:+02 01007449298"
+        />
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/image_back"
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailimage"
+        android:layout_below="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        />
+
+    <TextView
+        android:id="@+id/emailword"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/phoneimage"
+        android:layout_below="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="E_Mail"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/emailll"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textColor="#838187"
+        android:layout_toRightOf="@id/emailimage"
+        android:layout_below="@id/emailword"
+        android:text="Mail : mdalzym376@gmail.com
+Mail : mbdalzym376@gmail.com"
+        />
+       </RelativeLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+       android:layout_below="@id/first"
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<EditText
+    android:id="@+id/name_edit"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:hint="Enter name"
+    android:background="@drawable/edit_text_login"
+    android:padding="6dp"
+    android:layout_marginTop="25dp"
+    android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+    />
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter E_mail"
+            android:background="@drawable/edit_text_login"
+            android:padding="6dp"
+            android:drawableLeft="@drawable/email"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/subject_edit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter subject"
+            android:background="@drawable/edit_text_login"
+            android:padding="6dp"
+            android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/masseage_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:hint="write message"
+            android:background="@drawable/edit_text_login"
+            android:padding="6dp"
+            android:layout_marginTop="25dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Message"
+            android:textColor="#FEFCFF"
+            android:background="@drawable/splaback"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

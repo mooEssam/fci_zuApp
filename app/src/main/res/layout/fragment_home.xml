@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/v_flib"
+                android:layout_alignParentTop="true"
+                />
+
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/v_flib"
+                        android:id="@+id/welcomto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WELCOM TO"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_marginTop="13dp"
+                        android:layout_below="@+id/v_flib"
+                        android:id="@+id/fciword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" FCI Zagazig University"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/welcomto"
+                        android:textColor="#090909"
+                        tools:ignore="UnknownId" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@+id/welcomto"
+                android:id="@+id/tsatsa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" As part of the RentPath Small Property Network, Rentals.com is a leading online resource for residential rentals nationwide. Millions of unique visitors come to The RentPath Network to find single-family houses, apartments, condos and townhouses for rent. Rentals.com is also a powerful tool for property owners and managers. It increases rental responses and delivers accurate reporting and tracking for proven results"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/welcomto"
+                android:textColor="#090909"
+                android:layout_alignParentLeft="true"
+                tools:ignore="UnknownId" />
+            <TextView
+                android:layout_margin="12dp"
+                android:id="@+id/doctorword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tsatsa"
+                android:background="@drawable/edit_text_login"
+                android:padding="5dp"
+                android:text="Doctors"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:gravity="center_horizontal" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@drawable/splaback"
+                android:id="@+id/doctorrecycler"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/doctorword"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/doctorrecycler"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                tools:ignore="UnknownId">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="241dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/vtow" />
+
+                <RelativeLayout
+                    android:layout_width="502dp"
+                    android:layout_height="350dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_above="@+id/linerword"
+                        android:id="@+id/linernumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UnknownId">
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="200"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal" />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="400"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="300"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linerword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Students"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tutors"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sessions"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="316dp"
+                        android:layout_below="@+id/achive"
+                        android:text="At Quick Sell Your Car, we work to a strict time limit and can buy your car on the day of your appointment. We are one of the largest online car buyers and so can buy cars for cash which means that you will receive your payment within 24 hours of your visit. The money will be transferred directly into your bank account by direct BACS payment "
+                        android:textColor="#0B0B0B"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/achive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Our's Achivement"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

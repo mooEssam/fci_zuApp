@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Courses">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/splaback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/iscours"
+                android:elevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                     android:id="@+id/isrela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iscourseimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/is" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iscourseimage"
+                        android:background="@drawable/edit_text_login"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="IS_COURSES"
+                        android:textSize="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal" />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dscours"
+                android:clickable="true"
+                android:layout_below="@id/iscours"
+                android:elevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/dsimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ds"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsimage"
+                        android:background="@drawable/edit_text_login"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="DS_COURSES"
+                        android:textSize="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal" />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:id="@+id/Cscours"
+                android:layout_below="@id/dscours"
+                android:elevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Csimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cs"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Csimage"
+                        android:background="@drawable/edit_text_login"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="CS_COURSES"
+                        android:textSize="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal" />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:id="@+id/Itcours"
+                android:layout_below="@id/Cscours"
+                android:elevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Itimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/it"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Itimage"
+                        android:background="@drawable/edit_text_login"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="IT_COURSES"
+                        android:textSize="30dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal" />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

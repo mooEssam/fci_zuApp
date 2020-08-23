@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/splaback"
+    tools:context=".Splash">
+    <TextView
+        android:id="@+id/welcomword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to FCI_ZU"
+        android:textColor="#49356E"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+         android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:background="@drawable/splach" />
+
+
+
+</RelativeLayout>

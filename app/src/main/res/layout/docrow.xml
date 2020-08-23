@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:layout_margin="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="300dp">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="35dp"
+        android:layout_margin="9dp"
+        android:elevation="15dp"
+        android:layout_width="250dp"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="300dp">
+    <ImageView
+        android:id="@+id/doctimage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/splach"
+        />
+    <TextView
+        android:id="@+id/doctname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctimage"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Ehab Roshdy"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/doctobject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctname"
+        android:layout_marginTop="14dp"
+        android:textColor="#302A39"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text=" Quick Sell Your Car, we work to a strict time limit"
+
+        />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
